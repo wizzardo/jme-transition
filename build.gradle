@@ -1,0 +1,22 @@
+group 'com.wizzardo'
+version '0.1-SNAPSHOT'
+
+ext {
+    descriptionString = 'Small library for smooth transitions in jME'
+}
+
+apply plugin: 'java'
+apply from: 'gradle/sonatype.gradle'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jmonkeyengine:jme3-core:3.2.1-stable"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
