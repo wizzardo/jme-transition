@@ -15,6 +15,7 @@ repositories {
 }
 
 dependencies {
-    runtimeOnly "org.jmonkeyengine:jme3-core:3.2.2-stable"
+    implementation "org.jmonkeyengine:jme3-core:3.2.2-stable"
+
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
